@@ -90,6 +90,7 @@ class MyWidget(QMainWindow):
         header_labels = ['ID', 'Название_сорта', 'Степень_обжарки', 'Молотый/в_зернах', 'Описание_вкуса', 'Цена',
         'Объём_упаковки']
         self.table.setHorizontalHeaderLabels(header_labels)
+        self.table.horizontalHeader().setStretchLastSection(True)
 
         for i, elem in enumerate(result):
             for j, val in enumerate(elem):
